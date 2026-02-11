@@ -5,46 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap" rel="stylesheet">
-<script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            figtree: ['Figtree', 'sans-serif'],
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                customgray: {
+                  700: 'hsl(0, 0%, 20%)',
+                  800: 'rgb(31, 31, 31)',
+                  900: 'hsl(0, 0%, 8%)',
+                }
+              }
+            }
           }
         }
-      }
-    }
-  </script>
+      </script>
+      
+    
+
   
-    <style>
-        body{
-            background-color: #f4d04e;
-            
-
-        }
-     
-
-    </style>
+    
 </head>
 <body>
-   <div class="h-screen w-screen flex justify-center items-center">
-            <div class="shadow-[8px_8px_0px_0.5px_rgba(0,0,0,0.85)] bg-white border-[1px] border-black h-[58%] w-[25%] rounded-2xl p-5
-                        flex flex-col items-start justify-between">
-
-                            <img src="illustration-article.svg" alt="qr-code" class="h-h-40 w-full rounded-2xl">
-                            <h1 class="bg-[#f4d04e] w-20 pl-2 rounded font-figtree font-bold text-3x ">Learning</h1>
-                            <p class="text-gray-500 font-figtree font-medium ">Published 21 Dec 2023</p>
-                            <h1 class="font-figtree font-extrabold text-2xl ">HTML & CSS foundations</h1>
-                            <p class="font-figtree font-medium  text-gray-500">These languages are the backbone of every website, defining structure, content, and presentation.</p>
-                            <div class="flex items-center">
-                                <img src="image-avatar.webp" alt="" class="h-8 w-8 rounded-xl">
-                                <p class="font-figtree font-extrabold  ml-3 text- ">Greg Hooper</p>
-                            </div>
+    <div  class="bg-customgray-900 flex justify-center items-center h-screen w-screen ">
+        <div class="bg-customgray-800 flex flex-col justify-around  items-center h-[40vw] w-[26%]  rounded-2xl">
+            <img src="avatar-jessica.jpeg" alt="" class="h-20 w-20 rounded-[40px] ">
+           
+            <div>
+                <h1 class="text-white text-2xl font-bold">Jessica Randall</h1>
+                <h2 class="text-[hsl(75,94%,57%)] text-sm ">London, United Kingdom</h2>
             </div>
-</div>
+
+            <p class="text-white text-sm">"Front-end developer and avid reader."</p>
+            
+           <div class="gap-4 w-full flex justify-between items-center flex-col">
+             <button class="bg-customgray-700 h-10 w-[75%] rounded text-white">GitHub</button>
+            <button class="bg-customgray-700 h-10 w-[75%] rounded text-white">Frontend Mentor</button>
+            <button class="bg-customgray-700 h-10 w-[75%] rounded text-white">Linkedin</button>
+            <button class="bg-customgray-700 h-10 w-[75%] rounded text-white">Twitter</button>
+            <button class="bg-customgray-700 h-10 w-[75%] rounded text-white">Instagram</button></div>
+
+        </div>
+   </div>   
+  
 </body>
 </html>
